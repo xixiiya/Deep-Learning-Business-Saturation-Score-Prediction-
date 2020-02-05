@@ -1,7 +1,7 @@
 # Deep-Learning_Business-Saturation-Score-Prediction
 The objective of this project is to predict a "business score" for each of the USA zipcodes. The exact nature of the "business score" (score column) is not disclosed. It is connected to the business/market saturation of a zipcode. 
 ## Dataset
-The feature raw dataset is called "SOI Tax Stats - Individual Income Tax Statistics 2016" from US Government public data (https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-2016-zip-code-data-soi/). The training and testing dataset are from Kaggle, which can be found here (https://www.kaggle.com/c/applications-of-deep-learningwustl-spring-2019/data/).
+The feature raw dataset is called "SOI Tax Stats - Individual Income Tax Statistics 2016" from [US Government public data] (https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-2016-zip-code-data-soi/). The training and testing dataset are from Kaggle, which can be found [here] (https://www.kaggle.com/c/applications-of-deep-learningwustl-spring-2019/data/).
 ## Data Cleaning
 For this project, the zip code of 0 and 99999 was removed and then groups are assigned from 1 to 6 with median of 'AGI-sub' . For the features (from N1 to ELDERLY in the original dataset), the assigned group number above multiply groups of people to calculate the total number that can be represented for the zip code. The rest part of data used the “N” column multiply “A” column respectively to calculate the total number for that variable. After fitting the model, we get RMSE about 6.5.
 ## Modeling
